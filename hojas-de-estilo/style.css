@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+:root{
+  --White: hsl(0, 0%, 100%);
+  --LightGrayishViolet: hsl(270, 3%, 87%);
+  --DarkGrayishViolet: hsl(279, 6%, 55%);
+  --VeryDarkViolet: hsl(278, 68%, 11%);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  position: relative;
+  min-height: 100%;
+}
+
+html, body{
+  font-size: 18px;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+span, input{
+  text-transform: uppercase;
+}
+
+span{
+  margin-top: 12px;
+}
+
+input{
+  width: 100%;
+  height: 45px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid var(--LightGrayishViolet);
+  outline: none;
+}
+
+input::placeholder{
+  font-family: 'Space Grotesk', sans-serif;
+  padding-left: 15px;
+  color: var(--DarkGrayishViolet);
+}
+
+.imagen{
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--VeryDarkViolet);
+  margin: 0 auto;
+  margin-bottom: 85px;
+  user-select: none;
+}
+
+.imagen img{
+  width: 285px;
+  height: 157px;
+}
+
+.back-card{
+  width: 285px;
+  height: 157px;
+  margin-left: 73px;
+  margin-top: 30px;
+}
+
+.back-card span{
+  top: 90px;
+  left: 306px;
+  position: absolute;
+  color: var(--White);
+  font-size: .5rem;
+}
+
+.back-card img{
+  position: relative;
+}
+
+.front-card{
+  width: 285px;
+  height: 157px;
+}
+
+.front-card span{
+  position: absolute;
+}
+
+.front-card img{
+  position: relative;
+  top: -68px;
+  left: 20px;
+}
+
+.card-number{
+  left: 44px;
+  top: 200px;
+  color: var(--White);
+  font-size: 1.2rem;
+}
+
+.card-name{
+  left: 44px;
+  top: 243px;
+  font-size: .5rem;
+  color: var(--White);
+}
+
+.card-date{
+  position: absolute;
+  display: flex;
+  width: 50px;
+  height: 30px;
+  left: 258px;
+  top: 250px;
+  font-size: .5rem;
+  color: var(--White);
+}
+
+.card-date-month{
+  top: -11px;
+  left: -12px;
+}
+
+.card-date-year{
+  top: -11px;
+  left: 4px;
+}
+
+.circulo1{
+  width: 30px;
+  height: 30px;
+  background-color: var(--White);
+  border-radius: 50%;
+  position: absolute;
+  top: 135px;
+  left: 43px;
+}
+
+.circulo2{
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--White);
+  border-radius: 50%;
+  position: absolute;
+  top: 143px;
+  left: 80px;
+}
+
+.main-content{
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 14px);
+}
+
+.card-data{
+  width: 326px;
+  margin: 0 auto;
+}
+
+.card-form{
+  display: flex;
+  flex-direction: column;
+  font-size: .8rem;
+}
+
+.card-form span{
+  margin-bottom: 12px;
+}
+
+.input-name::placeholder,
+.input-number::placeholder,
+.input-cvc::placeholder {
+  text-transform: none;
+}
+
+
+.exp-date{
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-date-text{
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.exp-date-text span{
+  padding: 0;
+  margin: 12px 0 0 -10px;
+  font-size: .8rem;
+}
+
+.date-input{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-input input{
+  width: 70px;
+}
+.cvc{
+  display: flex;
+  flex-direction: column;
+  width: 163px;
+}
+
+.data-private{
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirm-button{
+  width: 100%;
+  height: 50px;
+  text-transform: capitalize;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--VeryDarkViolet);
+  color: var(--LightGrayishViolet);
+  margin: 10px 0 50px 0;
+}
+
+.ocultar{
+  display: none;
+}
+
+.thanks-section{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thanks-img{
+  margin-top: -15px;
+}
+
+.thanks-titulo{
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.thanks-details{
+  color: var(--DarkGrayishViolet);
+  margin-top: 5px;
+}
+
+.thanks-button{
+  width: 100%;
+  height: 50px;
+  margin: 15px 0 45px 0;
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--VeryDarkViolet);
+  color: var(--LightGrayishViolet);
+  border: none;
+  border-radius: 10px;
+}
+
+.error{
+  color: red;
+  margin: 0 0 12px 0;
+  margin-bottom: 12px;
+  font-size: .6rem;
+}
+
+.date-input-error{
+  /* text-align: center; */
+  font-size: .7rem;
+  display: flex;
+  width: 150px;
+}
+.date-input-error div{
+  width: 50%;
+  margin: 0;
+}
+
+.date-input-error div:nth-child(2){
+  padding-left: 5px;
+}
+
+.form-input-cardMonth-error{
+  margin-left: -30px;
+
+}
+.form-input-cardYear-error{
+  margin-left: -20px;
+}
+
+[type='text']{
+  padding-left: .5rem;
+}
+
+
+footer {
+  width: 100%;
+  font-size: 1rem;
+  text-align: center;
+  position: absolute;
+  bottom: .5rem;
+  margin-top: 15px;
+}
+.footer a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1440px){
+  .main-content{
+    flex-direction: row;
+    min-height: 100vh;
+  }
+  
+  .imagen{
+    width: 475px;
+    min-height: 100vh;
+    margin: 0;
+  }
+  
+  .back-card{
+    position: relative;
+    left: 260px;
+    top: 271px;
+  }
+
+  
+  .back-card span{
+    position: absolute;
+    top: 72px;
+    left: 230px;
+  }
+  
+  .front-card {
+    position: relative;
+    left: 250px;
+    top: 0px;
+  }
+  
+  .card-number{
+    left: 44px;
+    top: 15px;
+    color: var(--White);
+    font-size: 1.2rem;
+  }
+  
+  .card-name{
+    left: 44px;
+    top: 60px;
+    font-size: .5rem;
+    color: var(--White);
+  }
+  
+  .card-date{
+    position: fixed;
+    left: 520px;
+    top: 258px;
+    font-size: .5rem;
+    color: var(--White);
+  }
+  
+  .card-date-month{
+    left: -10px;
+  }
+
+  .card-cvc{
+    margin: 0;
+  }
+
+  .circulo1{
+    width: 30px;
+    height: 30px;
+    background-color: var(--White);
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 43px;
+  }
+  
+  .circulo2{
+    width: 15px;
+    height: 15px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    position: absolute;
+    top: -42px;
+    left: 80px;
+  }
+
+  .card-data{
+    margin: auto auto;
+  }
+
+  .thanks-section{
+    margin: auto auto;
+  }
+
+  .thanks-button{
+    margin-top: 40px;
+  }
+
+  .input-name{
+    line-height: normal;
+
+  }
+
+  .input-name::input-placeholder{
+    margin-left: 20px;
+
+  }
+
+}
+
+
